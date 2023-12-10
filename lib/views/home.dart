@@ -138,26 +138,26 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       height: 60,
                       child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Expanded(
-                              child: Column(children: [
+                          Column(children: [
                             DropdownMenuCustom(
-                                width: dropDownWidth,
-                                isActive: true,
-                                initialSelection: selectedCourier,
-                                list: const [
-                                  "jne",
-                                  "tiki",
-                                  "pos"
-                                ].map<DropdownMenuEntry<String>>((String value) {
-                                  return DropdownMenuEntry<String>(
-                                      value: value, label: value);
-                                }).toList(),
-                                onDropDownMenuClick: onCourierSelected),
-                          ])),
-                          Expanded(
+                            width: dropDownWidth,
+                            isActive: true,
+                            initialSelection: selectedCourier,
+                            list: const [
+                              "jne",
+                              "tiki",
+                              "pos"
+                            ].map<DropdownMenuEntry<String>>((String value) {
+                              return DropdownMenuEntry<String>(
+                                  value: value, label: value);
+                            }).toList(),
+                            onDropDownMenuClick: onCourierSelected),
+                          ]),
+                          SizedBox(
+                            width: dropDownWidth,
                               child: TextField(
                               keyboardType: TextInputType.number,
                               onChanged: (text) {
