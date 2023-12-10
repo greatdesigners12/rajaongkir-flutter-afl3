@@ -143,7 +143,7 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           Expanded(
                               child: Column(children: [
-                            DropdownMenuExample(
+                            DropdownMenuCustom(
                                 width: dropDownWidth,
                                 isActive: true,
                                 initialSelection: selectedCourier,
@@ -167,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                               },
                               decoration: const InputDecoration(
                                 border: OutlineInputBorder(),
-                                hintText: 'Input weight (kg)',
+                                hintText: 'Input weight (gram)',
                               ),
                             ),
                           )

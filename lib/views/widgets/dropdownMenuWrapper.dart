@@ -25,7 +25,7 @@ class DropDownMenuWrapper extends StatelessWidget {
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
-      DropdownMenuExample(
+      DropdownMenuCustom(
           width: width,
           isActive: isActive,
           initialSelection: currentSelected,
@@ -35,13 +35,13 @@ class DropDownMenuWrapper extends StatelessWidget {
   }
 }
 
-class DropdownMenuExample extends StatefulWidget {
+class DropdownMenuCustom extends StatefulWidget {
   final List<DropdownMenuEntry<String>>? list;
   final String? initialSelection;
   final double? width;
   final void Function(String?)? onDropDownMenuClick;
   final bool? isActive;
-  const DropdownMenuExample(
+  const DropdownMenuCustom(
       {super.key,
       @required this.list,
       @required this.initialSelection,
@@ -50,10 +50,10 @@ class DropdownMenuExample extends StatefulWidget {
       @required this.isActive});
 
   @override
-  State<DropdownMenuExample> createState() => _DropdownMenuExampleState();
+  State<DropdownMenuCustom> createState() => _DropdownMenuCustomState();
 }
 
-class _DropdownMenuExampleState extends State<DropdownMenuExample> {
+class _DropdownMenuCustomState extends State<DropdownMenuCustom> {
   @override
   Widget build(BuildContext context) {
     List<DropdownMenuEntry<String>>? list = widget.list;
