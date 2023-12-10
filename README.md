@@ -1,6 +1,6 @@
 # hitung_ongkir_app 
 
-NIM : 0706012110026 \n
+# NIM : 0706012110026
 A new Flutter project.
 
 ## Getting Started
